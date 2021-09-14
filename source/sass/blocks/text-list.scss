@@ -1,0 +1,19 @@
+.text-list {
+  list-style: none;
+}
+
+.text-list__item {
+  padding-left: 19px;
+  position: relative;
+  @media (min-width: $laptop) {
+    padding-left: 25px;
+  }
+}
+.text-list__item::before {
+  content: "\2014";
+  position: absolute;
+  color: $blue;
+  font-weight: bold;
+  display: inline-block;
+  left: 0;
+}

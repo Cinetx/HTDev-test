@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+  width: 106px;
+  height: 30px;
+
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/logo@2x.png");
+  }
+
+  @media (min-width: $laptop) {
+    width: 150px;
+  height: 40px;
+  }
+}

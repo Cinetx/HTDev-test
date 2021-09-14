@@ -1,0 +1,133 @@
+.work-principles {
+  padding-left: 35px;
+
+
+  @media (min-width: $laptop) {
+    padding: 0;
+padding-left: 45px;
+  }
+
+  @media (min-width: $desktop) {
+padding-left: 60px;
+  }
+}
+.work-principles__slider {
+  @include white-bck;
+  padding: 20px;
+  background-image: url("../images/bck/bck-band-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 81%;
+
+
+  padding-right: 35px;
+
+
+  background-position: 20px 74px;
+  background-position: top 70px left 20px;
+  padding-top: 32px;
+
+  position: relative;
+
+
+  .pagination {
+    position: relative;
+    bottom: auto;
+    padding-top: 10px;
+
+    justify-content: center;
+    .swiper-pagination-bullet {
+      background-color: $blue;
+    }
+  }
+  @media (min-width: $tablet) {
+    background-position: 20px 50px;
+  }
+  @media (min-width: $laptop) {
+    background-position: 50px 82px;
+    padding-top: 43px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+    background-image: url("../images/bck/bck-band.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/bck/bck-band-mobile@2x.png");
+    @media (min-width: $laptop) {
+      background-image: url("../images/bck/bck-band@2x.png");
+
+    }
+  }
+
+  .swiper-wrapper {
+    min-height: 100%;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+}
+.work-principles {
+}
+.container {
+}
+.work-principles__title {
+  padding-right: 35px;
+  margin-bottom: 26px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 53px;
+  }
+}
+.work-principles__wrapper {
+}
+.swiper {
+}
+
+.swiper-slide {
+}
+.work-principles__sub-title {
+  margin-bottom: 33px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 51px;
+  }
+}
+
+.work-principles__sub-title-br--mobile{
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.work-principles__slider-button {
+  display: none;
+  position: absolute;
+  top: 48px;
+right: 60px;
+z-index: 10;
+
+@media (min-width: $laptop) {
+  display: flex;
+}
+
+}
+.title--sub {
+}
+.work-principles__text {
+}
+.text {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+.slider-button {
+}
+.button {
+}

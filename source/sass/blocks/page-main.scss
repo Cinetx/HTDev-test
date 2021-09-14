@@ -1,0 +1,211 @@
+.page-main {
+  background-color: $cream;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.page-main__about-us {
+  margin-bottom: 23px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 97px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 200%;
+    top: 0;
+    left: 20px;
+    background-color: $cream-dark;
+
+
+    @media (min-width: $laptop) {
+      left: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+}
+
+
+
+.page-main__our-projects {
+  margin-bottom: 37px;
+
+  // overflow: hidden;
+  @media (min-width: $laptop) {
+    margin-bottom: 42px
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 20px;
+    background-color: $cream-dark;
+
+    @media (min-width: $laptop) {
+      left: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc(100% - 20px);
+
+    height: 1px;
+    bottom: 0;
+    left: 20px;
+    background-color: $cream-dark;
+
+    @media (min-width: $tablet) {
+
+      width: 200%;
+    }
+
+    @media (min-width: $laptop) {
+      left: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+
+}
+
+
+.page-main__inteco-now {
+  margin-bottom: 34px;
+  // overflow: hidden;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 98px
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 50%;
+    bottom: 10px;
+    left: 20px;
+    background-color: $cream-dark;
+
+
+    @media (min-width: $laptop) {
+      left: 200px;
+
+      bottom: -60px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+
+
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc(100% - 20px);
+
+    height: 1px;
+    bottom: 10px;
+    left: 20px;
+    background-color: $cream-dark;
+
+    @media (min-width: $tablet) {
+
+      width: 200%;
+    }
+
+    @media (min-width: $laptop) {
+      left: 200px;
+      bottom: -60px;
+    }
+
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+}
+
+
+
+.page-main__work-principles {
+  margin-bottom: 54px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 96px
+  }
+
+}
+
+.page-main__staff-offer {
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    height: 1px;
+    width: 20px;
+    background-color: $cream-dark;
+
+    @media (min-width: $tablet) {
+      width: 200%;
+      left: calc(20px - 200%);
+    }
+
+
+    @media (min-width: $laptop) {
+      left: calc(200px - 200%);
+    }
+
+    @media (min-width: $desktop) {
+      left: calc(300px - 200%);
+
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+
+    height: calc(20px + 100%);
+    width: 1px;
+    background-color: $cream-dark;
+
+
+    @media (min-width: $laptop) {
+      left: 200%;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+}

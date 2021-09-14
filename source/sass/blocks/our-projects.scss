@@ -1,0 +1,163 @@
+.our-projects {
+  position: relative;
+  padding-bottom: 39px;
+
+  @media (min-width: $laptop) {
+    padding-bottom: 49px;
+  }
+}
+
+.our-projects__slider {
+  width: 100%;
+
+  // display: flex;
+  // min-width: 0;
+  height: 100%;
+  position: relative;
+  padding-top: 139px;
+  margin-bottom: 25px;
+
+
+  padding-left: 17px;
+
+  .swiper {
+    width: 84%;
+    top: 0;
+    position: absolute;
+    margin: 0;
+  }
+
+  .pagination {
+    align-items: center;
+    justify-content: center;
+
+    top: calc(330px - 140%);
+    @media (min-width: 440px) {
+      padding-left: 10px;
+      justify-content: flex-start;
+      top: auto;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 44px;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $laptop) {
+    padding-top: 37px;
+    margin-bottom: 180px;
+    padding-left: 0;
+
+    .swiper {
+      width: 73.6%;
+    }
+  }
+}
+
+
+.our-projects__slider-button {
+  position: absolute;
+  bottom: -69px;
+  right: 60px;
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: flex;
+  }
+
+}
+
+.our-projects__wrapper {
+
+  padding-left: 45px;
+  padding-right: 36px;
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+
+
+  @media (min-width: $laptop) {
+    padding-left: 220px;
+    padding-right: 120px;
+
+    &:first-child {
+      margin-bottom: 56px;
+    }
+
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 330px;
+    padding-right: 200px;
+  }
+}
+
+.our-projects__sub-wrapper {
+  @include white-bck;
+  max-width: 295px;
+
+
+
+
+  padding: 20px;
+  padding-top: 22px;
+  position: relative;
+
+  z-index: 2;
+  margin-left: auto;
+
+  @media (min-width: $laptop) {
+    max-width: 470px;
+    padding-left: 43px;
+    padding-top: 35px;
+    padding-right: 36px;
+    padding-bottom: 39px;
+
+  }
+
+
+  @media (min-width: $desktop) {
+    padding-left: 51px;
+    padding-top: 57px;
+    padding-right: 45px;
+    padding-bottom: 56px;
+  }
+
+
+
+
+
+}
+
+
+.our-projects__title {
+  margin-bottom: 13px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 16px;
+  }
+}
+
+.title {}
+
+.our-projects__text {}
+
+.our-projects__text-br--mobile {
+  @media (min-width: $laptop) {
+    display: none;
+  }
+}
+
+.text {}
+
+.our-projects__sub-title {
+  margin-bottom: 10px;
+}
+
+.title--sub {}
