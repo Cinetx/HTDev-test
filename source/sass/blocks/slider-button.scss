@@ -1,0 +1,13 @@
+.slider-button {
+  width: 20px;
+  height: 18px;
+
+  background-color: inherit;
+  background-image: url("../images/arrows.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/arrows@2x.png");
+  }
+}

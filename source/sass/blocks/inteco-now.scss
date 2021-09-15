@@ -1,0 +1,281 @@
+.inteco-now {
+  position: relative;
+
+
+  @media (min-width: $laptop) {
+    padding-bottom: 0;
+  }
+}
+
+.inteco-now__header {
+  margin-bottom: 44px;
+  padding: 0 35px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 54px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px;
+  }
+}
+
+.inteco-now__wrapper {
+  position: relative;
+
+
+  @media (min-width: $laptop) {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: $cream-dark;
+
+    @media (min-width: $laptop) {
+      left: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    display: block;
+    width: 20px;
+    height: 1px;
+
+    background-color: $cream-dark;
+    @media (min-width: $tablet) {
+      left: calc(20px - 200%);
+
+      width: 200%;
+    }
+
+    @media (min-width: $laptop) {
+      left: calc(200px - 200%);
+    }
+    @media (min-width: $desktop) {
+      left: calc(300px - 200%);
+    }
+  }
+}
+
+.inteco-now__header-wrapper {
+  display: flex;
+}
+
+.inteco-now__title {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.inteco-now__text {
+  flex-basis: 50%;
+  margin-right: 20px;
+
+  @media (min-width: $laptop) {
+    flex-basis: 55%;
+    margin-right: 0;
+    margin-right: 10px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: auto;
+    margin-right: 32px;
+    padding-right: 60px;
+  }
+}
+
+.inteco-now__text-br--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
+}
+
+.inteco-now__description-list {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin: 0;
+  padding-right: 31px;
+
+
+  dt {
+    margin-bottom: 4px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    span:first-child {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    span:last-child {
+      display: block;
+      margin-bottom: 12px;
+
+      list-style: 32px;
+      font-size: 36px;
+    }
+  }
+
+  dd {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $laptop) {
+    flex-basis: auto;
+    justify-content: space-between;
+    padding-right: 0;
+
+    dt {
+      margin-bottom: 6px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      span:first-child {
+        display: block;
+        margin-bottom: 7px;
+      }
+
+      span:last-child {
+        display: inline;
+        margin-bottom: 0;
+
+        list-style: 42px;
+        font-size: 48px;
+      }
+    }
+
+    dd {
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.inteco-now__description-item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media (min-width: $laptop) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 0;
+  }
+}
+
+.inteco-now__list {
+  position: relative;
+  z-index: 1;
+
+  max-width: 90%;
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 34px;
+  padding-bottom: 28px;
+  padding-left: 35px;
+
+  @include white-bck;
+  @include list-reset;
+
+
+  @media (min-width: $laptop) {
+    max-width: 470px;
+    padding-top: 43px;
+    padding-right: 36px;
+    padding-bottom: 52px;
+    padding-left: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 62px;
+    padding-bottom: 63px;
+    padding-left: 60px;
+  }
+}
+
+.inteco-now__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 10px;
+  }
+}
+
+.inteco-now__bck-img {
+  position: relative;
+  bottom: 30px;
+
+  width: 89%;
+  height: 0;
+  height: 100%;
+  margin-left: auto;
+  padding-top: 54%;
+
+  background-image: url("../images/bck/bck2-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: $tablet) {
+    width: 94%;
+  }
+
+  @media (min-width: $laptop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 73.5%;
+    padding-top: 0;
+
+    background-image: url("../images/bck/bck2.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/bck/bck2-mobile@2x.jpg");
+
+    @media (min-width: $laptop) {
+      background-image: url("../images/bck/bck2@2x.jpg");
+    }
+  }
+}

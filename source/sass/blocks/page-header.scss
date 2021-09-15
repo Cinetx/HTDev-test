@@ -1,0 +1,28 @@
+.page-header__wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  padding-top: 24px;
+  padding-bottom: 30px;
+
+  &::after {
+    @media (min-width: $laptop) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 200px;
+
+      display: block;
+      width: 1px;
+      height: 100%;
+
+      background-color: $cream-dark;
+    }
+    @media (min-width: $desktop) {
+      left: 300px;
+    }
+  }
+}

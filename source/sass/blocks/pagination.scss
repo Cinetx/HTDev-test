@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+
+    background-color: $white;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media (min-width: $laptop) {
+    display: none;
+  }
+}

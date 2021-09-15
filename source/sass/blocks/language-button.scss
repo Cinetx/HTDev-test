@@ -1,0 +1,17 @@
+.language-button {
+  display: none;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../images/language.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/language@2x.png");
+  }
+
+  @media (min-width: $laptop) {
+    display: block;
+  }
+}

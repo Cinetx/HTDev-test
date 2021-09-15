@@ -1,0 +1,26 @@
+.title {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: $blue;
+
+  &--sub {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-black;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 32px;
+    line-height: 38px;
+
+    &--sub {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

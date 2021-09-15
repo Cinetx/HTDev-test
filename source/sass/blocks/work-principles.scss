@@ -1,0 +1,107 @@
+.work-principles {
+  padding-left: 35px;
+
+  @media (min-width: $laptop) {
+    padding: 0;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 60px;
+  }
+}
+
+.work-principles__slider {
+  position: relative;
+
+  padding: 20px;
+  padding-top: 32px;
+  padding-right: 35px;
+
+  background-image: url("../images/bck/bck-band-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 20px 74px;
+  background-position: top 70px left 20px;
+  background-size: 81%;
+
+  @include white-bck;
+
+  .pagination {
+    position: relative;
+    bottom: auto;
+
+    justify-content: center;
+    padding-top: 10px;
+
+    .swiper-pagination-bullet {
+      background-color: $blue;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    background-position: 20px 50px;
+  }
+
+  @media (min-width: $laptop) {
+    padding-top: 43px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+    padding-left: 50px;
+
+    background-image: url("../images/bck/bck-band.png");
+    background-position: 50px 82px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/bck/bck-band-mobile@2x.png");
+
+    @media (min-width: $laptop) {
+      background-image: url("../images/bck/bck-band@2x.png");
+    }
+  }
+
+  .swiper-wrapper {
+    min-height: 100%;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+
+.work-principles__title {
+  margin-bottom: 26px;
+  padding-right: 35px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 53px;
+  }
+}
+
+.work-principles__sub-title {
+  margin-bottom: 33px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 51px;
+  }
+}
+
+.work-principles__sub-title-br--mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.work-principles__slider-button {
+  position: absolute;
+  top: 48px;
+  right: 60px;
+  z-index: 10;
+
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: flex;
+  }
+}

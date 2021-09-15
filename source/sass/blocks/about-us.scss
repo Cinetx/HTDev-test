@@ -1,0 +1,85 @@
+.about-us {
+  position: relative;
+
+  padding-top: 134px;
+  padding-bottom: 10px;
+
+  @media (min-width: $laptop) {
+    padding-top: 66px;
+    padding-bottom: 64px;
+  }
+}
+
+.about-us__wrapper {
+  position: relative;
+  z-index: 1;
+
+  max-width: 295px;
+  padding-top: 33px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+  padding-left: 35px;
+
+  @include white-bck;
+
+
+  @media (min-width: $laptop) {
+    max-width: 550px;
+    padding-top: 23px;
+    padding-right: 27px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 47px;
+    padding-right: 36px;
+    padding-bottom: 44px;
+    padding-left: 60px;
+  }
+}
+
+.about-us__bck-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 90%;
+  height: 100%;
+
+  background-image: url("../images/bck/bck1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: $laptop) {
+    width: 73.6%;
+    height: 100%;
+
+    background-image: url("../images/bck/bck1.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/bck/bck1-mobile@2x.jpg");
+
+    @media (min-width: $laptop) {
+      background-image: url("../images/bck/bck1@2x.jpg");
+    }
+  }
+}
+
+.about-us__title {
+  margin-bottom: 13px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 18px;
+  }
+}
+
+.about-us__title__text {
+  margin-bottom: 8px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 10px;
+  }
+}
